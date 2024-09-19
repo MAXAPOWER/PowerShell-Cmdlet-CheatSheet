@@ -29,3 +29,5 @@ MS PowerShell Cmdlets and Shortcuts (for when I inevitably forget some).
 | Cmdlet | Description                               |
 |---------|---------------------------------------|
 | gci -Path \\..\\<fileName> -Recurse -Force -ErrorAction SilentlyContinue | Recursive search through all directories, ignoring errors from inaccessible paths          |
+| gwmi -Class win32_product \| select Name,Version,Vendor \| sort name \| Export-Csv $home\Desktop\sw_list.csv -NoTypeInformation | Get SW list of installed apps/pkgs          |
+|

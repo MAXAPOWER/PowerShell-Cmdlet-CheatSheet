@@ -21,4 +21,5 @@ MS PowerShell Cmdlets and Shortcuts (for when I inevitably forget some).
 |---------|---------------------------------------|
 | PS $PSVersionTable | Prints PS version          |
 | PS (Get-Process powershell).path \| select -first 1 | Prints where PowerShell is executing from       |
+| PS Test-ComputerSecureChannel -verbose | Tests trust relationship between LM and DC |
 |

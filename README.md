@@ -11,7 +11,7 @@ MS PowerShell Cmdlets and Shortcuts (for when I inevitably forget some).
 |  3  | [**PoSh Variables**](#posh-variables)            |
 |  4  | [**IO Redirection**](#io-redirection)            |
 |  5  | [**Directory Operations**](#directory-operations)|
-|  6  | [**Search Files**](#search-files)                |
+|  6  | [**Find Files**](#find-files)                |
 |  7  | [**File Operations**](#file-operations)          |
 |  8  | [**Process Management**](#process-management)    |
 
@@ -19,7 +19,13 @@ MS PowerShell Cmdlets and Shortcuts (for when I inevitably forget some).
 
 | Cmdlet | Description                               |
 |---------|---------------------------------------|
-| PS $PSVersionTable | Prints PS version          |
-| PS (Get-Process powershell).path \| select -first 1 | Prints where PowerShell is executing from       |
-| PS Test-ComputerSecureChannel -verbose | Tests trust relationship between LM and DC |
+| $PSVersionTable | Prints PS version          |
+| (Get-Process powershell).path \| select -first 1 | Prints where PowerShell is executing from       |
+| Test-ComputerSecureChannel -verbose | Tests trust relationship between LM and DC |
 |
+
+### Find Files
+
+| Cmdlet | Description                               |
+|---------|---------------------------------------|
+| gci -Path \..\$fileName -Recurse -Force -ErrorAction SilentlyContinue | Recursive search through all directories, ignoring errors from inaccessible paths          |

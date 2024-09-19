@@ -17,7 +17,7 @@ MS PowerShell Cmdlets and Shortcuts (for when I inevitably forget some).
 
 ### PoSh Cmdlets
 
-| Cmdlet | Details                               |
+| Cmdlet | Description                               |
 |---------|---------------------------------------|
 | PS $PSVersionTable | Prints PS version          |
 | PS (Get-Process powershell).path \| select -first 1 | Prints where PowerShell is executing from       |
